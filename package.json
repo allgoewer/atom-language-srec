@@ -1,0 +1,19 @@
+{
+  "name": "language-srec",
+  "version": "0.0.0",
+  "description": "Atom language support for Motorola S-record",
+  "keywords": [
+    "language",
+    "srec",
+    "s19",
+    "s28",
+    "s37"
+  ],
+  "repository": "https://github.com/allgoewer/atom-language-srec",
+  "license": "MIT",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "dependencies": {}
+}

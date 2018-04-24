@@ -1,0 +1,83 @@
+scopeName: 'source.srec'
+name: 'Motorola S-record'
+fileTypes: ['s19', 's28', 's37', 'srec' ]
+limitLineLength: false
+
+patterns: [
+    {
+        match: '^(S0)([0-9A-F]{2})(0000)((?:[0-9A-F]{2})+(?=[0-9A-F]{2}))([0-9A-F]{2})$'
+        captures:
+            1: name: 'entity.name.function.srec'
+            2: name: 'constant.numeric.srec'
+            3: name: 'constant.language.srec'
+            4: name: 'string.quoted.single.srec'
+            5: name: 'constant.numeric.srec'
+    }
+    {
+        match: '^(S1)([0-9A-F]{2})([0-9A-F]{4})((?:[0-9A-F]{2})+(?=[0-9A-F]{2}))([0-9A-F]{2})$'
+        captures:
+            1: name: 'entity.name.function.srec'
+            2: name: 'constant.numeric.srec'
+            3: name: 'constant.language.srec'
+            4: name: 'string.quoted.single.srec'
+            5: name: 'constant.numeric.srec'
+    }
+    {
+        match: '^(S2)([0-9A-F]{2})([0-9A-F]{6})((?:[0-9A-F]{2})+(?=[0-9A-F]{2}))([0-9A-F]{2})$'
+        captures:
+            1: name: 'entity.name.function.srec'
+            2: name: 'constant.numeric.srec'
+            3: name: 'constant.language.srec'
+            4: name: 'string.quoted.single.srec'
+            5: name: 'constant.numeric.srec'
+    }
+    {
+        match: '^(S3)([0-9A-F]{2})([0-9A-F]{8})((?:[0-9A-F]{2})+(?=[0-9A-F]{2}))([0-9A-F]{2})$'
+        captures:
+            1: name: 'entity.name.function.srec'
+            2: name: 'constant.numeric.srec'
+            3: name: 'constant.language.srec'
+            4: name: 'string.quoted.single.srec'
+            5: name: 'constant.numeric.srec'
+    }
+    {
+        match: '^(S5)(03)([0-9A-F]{4})([0-9A-F]{2})$'
+        captures:
+            1: name: 'entity.name.function.srec'
+            2: name: 'constant.numeric.srec'
+            3: name: 'string.quoted.single.srec'
+            4: name: 'constant.numeric.srec'
+    }
+    {
+        match: '^(S6)(04)([0-9A-F]{6})([0-9A-F]{2})$'
+        captures:
+            1: name: 'entity.name.function.srec'
+            2: name: 'constant.numeric.srec'
+            3: name: 'string.quoted.single.srec'
+            4: name: 'constant.numeric.srec'
+    }
+    {
+        match: '^(S7)(05)([0-9A-F]{8})([0-9A-F]{2})$'
+        captures:
+            1: name: 'entity.name.function.srec'
+            2: name: 'constant.numeric.srec'
+            3: name: 'constant.language.srec'
+            4: name: 'constant.numeric.srec'
+    }
+    {
+        match: '^(S8)(04)([0-9A-F]{6})([0-9A-F]{2})$'
+        captures:
+            1: name: 'entity.name.function.srec'
+            2: name: 'constant.numeric.srec'
+            3: name: 'constant.language.srec'
+            4: name: 'constant.numeric.srec'
+    }
+    {
+        match: '^(S9)(03)([0-9A-F]{4})([0-9A-F]{2})$'
+        captures:
+            1: name: 'entity.name.function.srec'
+            2: name: 'constant.numeric.srec'
+            3: name: 'constant.language.srec'
+            4: name: 'constant.numeric.srec'
+    }
+]
